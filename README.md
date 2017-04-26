@@ -230,7 +230,9 @@ Declare media queries in the same component definition instead of a general medi
 
 ## Sass / Less
 
-### Use variables
+### Variables
+Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
+
 Use variables instead of hardcoded values whenever possible. You might also like to use a configuration file for this:
 ```scss
 //  base/_config.scss
@@ -262,6 +264,9 @@ $desktop-small              : 1024px;
 $desktop-medium             : 1280px;
 $desktop-large              : 1440px;
 ```
+
+### Mixins
+Mixins should be used to DRY up your code, add clarity, or abstract complexity, in much the same way as well-named functions. Mixins that accept no arguments can be useful for this, but note that if you are not compressing your payload (e.g. gzip), this may contribute to unnecessary code duplication in the resulting styles.
 
 ### Use mixin and variables for media queries
 Use a media queries mixin within the pre-setted variables of breakpoints to improves the maintainability
@@ -335,6 +340,15 @@ Avoid nesting more than 4 levels to prevent large file sizes (in generated css f
       }
   }
 ```
+
+
+### Comments
+
+* Prefer line comments (`//` in Sass-land) to block comments.
+* Prefer comments on their own line. Avoid end-of-line comments.
+* Write detailed comments for code that isn't self-documenting:
+  * Uses of z-index
+  * Compatibility or browser-specific hacks
 
 
 ## Coding Style

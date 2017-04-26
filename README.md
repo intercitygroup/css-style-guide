@@ -3,6 +3,10 @@
 
 *A mostly reasonable approach to CSS*
 
+#### Other Style Guides
+- [HTML Style Guide](https://github.com/diegoteliz/html-style-guide)
+- [JavaScript Style Guide](https://github.com/diegoteliz/javascript-style-guide)
+
 ## General
 
 ### Minimise the use of element selectors

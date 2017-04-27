@@ -1,11 +1,12 @@
-. CSS Style Guide {
+. InterCity's CSS Style Guide {
 ==================
 
 *A mostly reasonable approach to CSS*
 
 #### Other Style Guides
-- [HTML Style Guide](https://github.com/diegoteliz/html-style-guide)
-- [JavaScript Style Guide](https://github.com/diegoteliz/javascript-style-guide)
+- [HTML Style Guide](https://github.com/intercitygroup/html-style-guide)
+- [JavaScript Style Guide (ES5)](https://github.com/intercitygroup/javascript-es5-style-guide)
+- [JavaScript Style Guide](https://github.com/intercitygroup/javascript-style-guide)
 
 ## General
 
